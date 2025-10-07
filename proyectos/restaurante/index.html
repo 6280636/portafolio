@@ -4,11 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurante Sabores</title>
-  <link rel="../../style.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Restaurante Sabores</h1>
-  <p>Bienvenido a la página de ejemplo de un restaurante moderno. Aquí puedes ver el menú, hacer reservas y conocer nuestros platos.</p>
-  <a href="../../index.html">← Volver al portafolio</a>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      🍷 Restaurante Sabores
+    </div>
+    <nav class="nav-buttons">
+      <a href="index.html"><button>Inicio</button></a>
+      <a href="menu.html"><button class="active">Menú</button></a>
+      <a href="galeria.html"><button class="active">Galería</button></a>      
+      <button>Reservas</button>
+      <button>Contacto</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Una experiencia gastronómica única</h1>
+      <p>Sabores auténticos, ingredientes frescos y ambiente elegante.</p>
+      <button class="cta-btn">Reservar mesa</button>
+    </div>
+  </section>
+
+  <!-- MENÚ DESTACADO -->
+  <section class="section">
+    <h2>Menú Destacado</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="assets/img/plato1.jpg" alt="Paella">
+        <h3>Paella</h3>
+        <p>Deliciosa paella de mariscos con arroz cremoso y especias.</p>
+      </div>
+      <div class="card">
+        <img src="assets/img/plato2.jpg" alt="Ensalada Mediterránea">
+        <h3>Ensalada Mediterránea</h3>
+        <p>Fresca ensalada con aceitunas, queso feta y verduras de temporada.</p>
+      </div>
+      <div class="card">
+        <img src="assets/img/plato3.jpg" alt="Tarta de Limón">
+        <h3>Tarta de Limón</h3>
+        <p>Postre casero con base de galleta y crema de limón suave.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contacto">
+    <h2>Contacto / Reservas</h2>
+    <p>📧 Email: <a href="mailto:reservas@sabores.com">reservas@sabores.com</a></p>
+    <p>📞 Teléfono: +1 555-123-4567</p>
+  </section>
+
+  <footer>
+    <a href="../index.html">← Volver al portafolio</a>
+  </footer>
 </body>
 </html>
