@@ -3,11 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Portafolio</title>
+  <title>Portafolio de Víctor</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hola, soy Víctor 👋</h1>
-  <p>Bienvenido a mi portafolio web.</p>
+  <!-- Encabezado -->
+  <header>
+    <h1>👨‍💻 Víctor Web Design</h1>
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Sección sobre mí -->
+  <section id="sobre-mi" class="section">
+    <h2>Sobre mí</h2>
+    <p>
+      ¡Hola! Soy <strong>Víctor</strong>, desarrollador web apasionado por crear sitios
+      modernos, rápidos y adaptables. Me gusta convertir ideas en experiencias digitales.
+    </p>
+  </section>
+
+  <!-- Sección de proyectos -->
+  <section id="proyectos" class="section">
+    <h2>Proyectos destacados</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="assets/img/restaurante.jpg" alt="Sitio Restaurante">
+        <h3>Restaurante Sabores</h3>
+        <p>Sitio web para un restaurante moderno con menú digital y reservas.</p>
+        <a href="proyectos/restaurante/index.html" target="_blank">Ver proyecto</a>
+      </div>
+
+      <div class="card">
+        <img src="assets/img/fotografo.jpg" alt="Sitio Fotógrafo">
+        <h3>Fotografía Creativa</h3>
+        <p>Portafolio profesional para un fotógrafo con galería y contacto.</p>
+        <a href="proyectos/fotografo/index.html" target="_blank">Ver proyecto</a>
+      </div>
+
+      <div class="card">
+        <img src="assets/img/tienda.jpg" alt="Sitio Tienda">
+        <h3>Tienda Online</h3>
+        <p>Catálogo de productos con carrito y descripción detallada.</p>
+        <a href="proyectos/tienda/index.html" target="_blank">Ver proyecto</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de contacto -->
+  <section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <p>📧 Escríbeme a: <a href="mailto:victorweb@gmail.com">victorweb@gmail.com</a></p>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© 2025 Víctor Web Design | Todos los derechos reservados</p>
+  </footer>
 </body>
 </html>
