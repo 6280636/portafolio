@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Restaurante Sabores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">🍷 Restaurante Sabores</div>
+    <nav class="nav-buttons">
+      <a href="index.html"><button>Inicio</button></a>
+      <a href="menu.html"><button>Menú</button></a>
+      <a href="galeria.html"><button>Galería</button></a>
+      <a href="reservas.html"><button>Reservas</button></a>
+      <a href="contacto.html"><button class="active">Contacto</button></a>
+    </nav>
+  </header>
+
+  <!-- SECCIÓN DE CONTACTO -->
+  <section class="section contacto">
+    <h2>Contáctanos</h2>
+    <p>
+      ¿Tienes preguntas, sugerencias o quieres más información sobre nuestro restaurante?
+      Completa el siguiente formulario o utiliza nuestros medios de contacto directo.
+    </p>
+
+    <form class="contacto-form">
+      <div class="form-group">
+        <label for="nombre">👤 Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">📧 Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">💬 Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="cta-btn">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <!-- INFORMACIÓN DE CONTACTO DIRECTO -->
+  <section class="section info-contacto">
+    <h3>📍 También puedes visitarnos</h3>
+    <p><strong>Dirección:</strong> Av. Gastronómica 123, Montreal, Canadá</p>
+    <p><strong>Teléfono:</strong> +1 555-123-4567</p>
+    <p><strong>Email:</strong> <a href="mailto:reservas@sabores.com">reservas@sabores.com</a></p>
+
+    <div class="mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.614056726547!2d-73.56374228444443!3d45.508888379101816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a499fe0f6b1%3A0x9efb768d2cb0dc6!2sMontreal!5e0!3m2!1ses!2sca!4v1700000000000"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>    
+    <p>© 2025 Víctor Web Design | Todos los derechos reservados</p>
+  </footer>
+    <script>
+        document.querySelector('.contacto-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('¡Gracias por contactarnos! Te responderemos lo antes posible.');
+        this.reset();
+      });
+  </script>
+
+</body>
+
+</html>

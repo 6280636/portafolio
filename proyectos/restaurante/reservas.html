@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas | Restaurante Sabores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">🍷 Restaurante Sabores</div>
+    <nav class="nav-buttons">
+      <a href="index.html"><button>Inicio</button></a>
+      <a href="menu.html"><button>Menú</button></a>
+      <a href="galeria.html"><button>Galería</button></a>
+      <a href="reservas.html"><button class="active">Reservas</button></a>
+      <a href="contacto.html"><button>Contacto</button></a>
+    </nav>
+  </header>
+
+  <!-- SECCIÓN DE RESERVAS -->
+  <section class="section reservas">
+    <h2>Reserva tu mesa</h2>
+    <p>Completa el formulario y nos pondremos en contacto contigo para confirmar tu reserva.</p>
+
+    <form class="reserva-form">
+      <div class="form-group">
+        <label for="nombre">👤 Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">📧 Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefono">📞 Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required>
+      </div>
+
+      <div class="form-group">
+        <label for="fecha">📅 Fecha</label>
+        <input type="date" id="fecha" name="fecha" required>
+      </div>
+
+      <div class="form-group">
+        <label for="hora">⏰ Hora</label>
+        <input type="time" id="hora" name="hora" required>
+      </div>
+
+      <div class="form-group">
+        <label for="personas">👥 Número de personas</label>
+        <input type="number" id="personas" name="personas" min="1" max="10" required>
+      </div>
+
+      <button type="submit" class="cta-btn">Enviar reserva</button>
+    </form>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contacto">
+    <h2>¿Prefieres llamarnos?</h2>
+    <p>📞 +1 555-123-4567</p>
+    <p>📧 <a href="mailto:reservas@sabores.com">reservas@sabores.com</a></p>
+  </section>
+
+  <footer>
+    <a href="../../index.html">← Volver al portafolio</a>
+    <p>© 2025 Víctor Web Design | Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
