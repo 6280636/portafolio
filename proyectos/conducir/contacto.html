@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - École de Conduite Horizon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      🚗 École de Conduite Horizon
+    </div>
+    <nav class="nav-buttons">
+      <a href="index.html"><button>Accueil</button></a>
+      <a href="cours.html"><button>Cours</button></a>
+      <a href="tarifs.html"><button>Tarifs</button></a>
+      <a href="contacto.html"><button class="active">Contact</button></a>
+    </nav>
+  </header>
+
+  <!-- SECTION CONTACT -->
+  <section class="contact-section">
+    <h1>Contactez-nous</h1>
+    <p>Besoin d'information ou envie de réserver un cours ? Remplissez le formulaire ci-dessous.</p>
+
+    <div class="contact-grid">
+      <!-- FORMULAIRE -->
+      <form class="contact-form">
+        <label for="nom">Nom complet</label>
+        <input type="text" id="nom" placeholder="Votre nom complet" required>
+
+        <label for="email">Courriel</label>
+        <input type="email" id="email" placeholder="votre@email.com" required>
+
+        <label for="telephone">Téléphone</label>
+        <input type="tel" id="telephone" placeholder="+1 514 123 4567" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Votre message..."></textarea>
+
+        <button type="submit" class="btn-submit">Envoyer</button>
+      </form>
+
+      <!-- INFO -->
+      <div class="contact-info">
+        <h3>Nos coordonnées</h3>
+        <p>📍 1250 Rue Sherbrooke Est, Montréal, QC</p>
+        <p>📞 +1 (514) 555-1234</p>
+        <p>📧 info@horizonconduite.ca</p>
+
+        <h3>Heures d'ouverture</h3>
+        <p>Lun - Ven : 9h00 - 19h00</p>
+        <p>Samedi : 10h00 - 15h00</p>
+        <p>Dimanche : Fermé</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="map-section">
+    <iframe 
+      src="https://www.google.com/maps?q=1250%20Rue%20Sherbrooke%20Est,%20Montr%C3%A9al,%20QC&output=embed" 
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 École de Conduite Horizon | Conception par Victor Web Design</p>
+  </footer>
+</body>
+</html>
